@@ -13,9 +13,6 @@ pipeline {
           sh 'git ftp $TYPE --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://s222943.gridserver.com/domains/$DOMAIN/html/'
         }
       }
-      steps {
-        cleanWs()
-      }
     }
   }
 }
